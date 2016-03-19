@@ -23,10 +23,6 @@ export default class GridViewDimensions extends Component {
   	var screenWidth = Dimensions.get('window').width;
   	var itemsPerRow = Math.floor(screenWidth / itemWidth)
   	var containerWidth = Math.floor(screenWidth/ itemsPerRow)
-  	console.log('fdgdfgdfg')
-  	console.log(screenWidth)
-  	console.log(itemsPerRow)
-  	console.log(containerWidth)
     return (
       <ListView contentContainerStyle={styles.list}
         dataSource={this.state.dataSource}
