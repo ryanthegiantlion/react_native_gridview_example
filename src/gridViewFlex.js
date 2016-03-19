@@ -10,8 +10,8 @@ class Row extends Component {
   render() {
     let items = this.props.rowItems.map(function(item) {
     	return (
-				<View key={item} style={styles.itemContainer}><Text style={styles.item}>{item}</Text></View>
-			)
+    		<View key={item} style={styles.itemContainer}><Text style={styles.item}>{item}</Text></View>
+    	);
 		});
 		let missingItemCount = this.props.fullRowItemCount - this.props.rowItems.length
     let padding = <View style={{flex: missingItemCount}}></View> 
